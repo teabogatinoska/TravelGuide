@@ -1,0 +1,62 @@
+﻿@model IEnumerable<IT_TRAVEL_GUIDE.Models.CityAttraction>
+
+    <table class="table tabelaReviews">
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.AttractionName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+        </tr>
+
+
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AttractionName)
+                <span class="spanAttr">@Html.DisplayFor(modelItem => item.Type)</span>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+
+            <td>
+                @if (User.IsInRole("Administrator") || User.IsInRole("Editor")){
+                <input type="button" class="btn" value="Edit" onclick="location.href='@Url.Action("Edit" , new { id=item.Id })'" />
+                }
+               
+            </td>
+        </tr>
+        }
+    </table>
+
+    @section scripts{
+    <script>
+        $(document).ready(function () {
+            var table = $("#citiesTable").DataTable();
+            $("#citiesTable .js-delete").on("click", function () {
+                var button = $(this);
+                bootbox.confirm("Do you want to delete this city?", function (result) {
+                    if (result) {
+                        $.ajax({
+                            url: "/api/Cities1/" + button.attr("data-id"),
+                            method: "DELETE",
+                            success: function () {
+                                table.row(button.parents("tr")).remove().draw();
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    }

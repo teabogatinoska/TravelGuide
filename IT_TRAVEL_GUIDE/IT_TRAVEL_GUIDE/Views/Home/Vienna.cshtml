@@ -1,0 +1,132 @@
+﻿
+@{
+    ViewBag.Title = "Vienna";
+}
+
+<head>
+    <link rel="stylesheet" href="~/Content/CityCss.css" type="text/css" />
+    <script type="text/javascript" src="~/Content/CityJavascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <div class="header">
+        <h1>Vienna</h1>
+    </div>
+
+    <div class="clearfix">
+
+        <div class="column menu">
+            <ul class="ulMenu">
+                <li id="li1">Main attractions</li>
+                <li id="li2">Restaurants</li>
+                <li id="li3">Hotels</li>
+                <li id="li5">Nightlife</li>
+                <li id="li6">Tips</li>
+            </ul>
+        </div>
+
+        <div class="column content">
+
+            <div class="divMainAttractions">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/palace.jpg" class="active">
+                            <p>Schonbrunn Palace</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/hofburg.jpg">
+                            <p>The Hofburg</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/belvedere.jpg">
+                            <p>Belvedere Palace</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divRestaurants">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/wolf.jpg" class="active">
+                            <p>Pramerl & the Wolf</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/palmenhaus.jpg">
+                            <p>The Palmenhaus</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/neni.jpg">
+                            <p>Neni Am Naschmarkt</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divBeaches">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/grand.jpg" class="active">
+                            <p>GRAND HOTEL WIEN</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/ritz.jpg">
+                            <p>THE RITZ-CARLTON WIEN</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/sacher.jpg">
+                            <p>HOTEL SACHER WIEN</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divNightlife">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/volksgarten.jpg" class="active">
+                            <p>VOLKSGARTEN CLUB</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/flex.jpg">
+                            <p>FLEX</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/donau.jpg">
+                            <p>DONAU</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divTips">
+                <ul class="tips">
+                    <li>Vienna has a well-developed transport system and you shouldn’t have any problems getting around</li>
+                    <li>Vienna tap water is great and comes straight from the mountains. It is drinkable in most places</li>
+                    <li>November to December are considered to be the most magical months in the city because of the Christmas markets</li>
+                    <li>Some restaurants do not accept credit cards, so be prepared with some Euro on hand</li>
+                    <li>Almost all shops are closed on Sundays</li>
+                </ul>
+            </div>
+            <div class="divInfo">
+                <p>Austria's Imperial capital offers a unique blend of imperial traditions and stunning modern architecture. It is famous for its cultural events, imperial sights, coffee houses, cozy wine taverns, and the very special Viennese charm</p>
+                <img src="~/Content/Images/viennaOutline.png" />
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <input type="button" class="btn btnSeeReviews" value="See reviews" onclick="location.href='@Url.Action("Index/5", "Reviews")'" />
+    </div>
+
+</body>

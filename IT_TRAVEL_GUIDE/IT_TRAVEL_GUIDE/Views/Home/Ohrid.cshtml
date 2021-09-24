@@ -1,0 +1,133 @@
+﻿
+@{
+    ViewBag.Title = "Ohrid";
+}
+
+    <head>
+        <link rel="stylesheet" href="~/Content/CityCss.css" type="text/css" />
+        <script type="text/javascript" src="~/Content/CityJavascript.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+<body>
+
+    <div class="header">
+        <h1>Ohrid</h1>
+    </div>
+
+    <div class="clearfix">
+
+        <div class="column menu">
+            <ul class="ulMenu">
+                <li id="li1">Main attractions</li>
+                <li id="li2">Restaurants</li>
+                <li id="li3">Beaches</li>
+                <li id="li5">Nightlife</li>
+                <li id="li6">Tips</li>
+            </ul>
+        </div>
+
+        <div class="column content">
+
+            <div class="divMainAttractions">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/samoil.jpg" class="active">
+                            <p>SAMOIL'S FORTRESS</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/sophia.jpg">
+                            <p>SAINT SOPHIA</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/theatre.jpg">
+                            <p>ANCIENT THEATRE OF OHRID</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divRestaurants">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/stazione.jpg" class="active">
+                            <p>STAZIONE PIZZA</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/leonardo.jpg">
+                            <p>LEONARDO RESTAURANT</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/diangolo.jpg">
+                            <p>DI ANGOLO PIZZERIA</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divBeaches">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/potpesh.jpg" class="active">
+                            <p>POTPESH BEACH</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/stnaum.jpg">
+                            <p>ST. NAUM BEACH</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/trpejca.jpg">
+                            <p>TRPEJCA</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divNightlife">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/cubalibre.jpg" class="active">
+                            <p>CUBA LIBRE BEACH & BAR</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/jazzinn.jpg">
+                            <p>JAZZ INN</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/kadmo.jpg">
+                            <p>KADMO BEACH CLUB</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divTips">
+                <ul class="tips">
+                    <li>Walk through the peaceful and steep streets of the old town</li>
+                    <li>Take the boat to St. Naum</li>
+                    <li>Go paragliding and experience an amazing view od the city</li>
+                    <li> May to September are the best months to plan your trip.</li>
+                    <li>Ohrid is one of the most affordable travel destinations in the Balkans</li>
+                </ul>
+            </div>
+            <div class="divInfo">
+                <p>There is no doubt that Ohrid is a tourist treasure trove just waiting to be discovered. Its natural beauty, Instagram-worthy scenery and budget friendly activities marks it as an up and coming choice for tourists looking for their next spot, so go before the tourist circus begins</p>
+                <img src="~/Content/Images/ohridOutline.png" />
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <input type="button" class="btn btnSeeReviews" value="See reviews" onclick="location.href='@Url.Action("Index/3", "Reviews")'" />
+    </div>
+
+</body>

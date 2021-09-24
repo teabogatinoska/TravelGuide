@@ -1,0 +1,28 @@
+﻿@model IT_TRAVEL_GUIDE.Models.City
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<head>
+    <link rel="stylesheet" href="~/Content/ReviewsZaGradCss.css" type="text/css" />
+</head>
+<body>
+
+    <div>
+        <img src="~/Content/Images/skyline.png" class="slikaOutline2" />
+    </div>
+    <h2 class="naslovReviews" style="margin-left: 270px">The Best Things To See & Do in @Model.CityName</h2>
+
+    <br />
+    <p>
+        @if (User.IsInRole("Administrator") || User.IsInRole("Editor")){
+        <input type="button" class="btn" value="Add New Attraction" onclick="location.href='@Url.Action("Create", new { cityId = Model.Id })'" />
+    }
+    </p>
+
+    @Html.Partial("_Attractions", Model.Attractions)
+
+
+
+</body>

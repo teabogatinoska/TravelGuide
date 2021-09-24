@@ -1,0 +1,42 @@
+﻿body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.containerGlaven {
+    font-size: 17px;
+    margin-top: -10px;
+}
+
+.btnEdit a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.btnEdit {
+    background-color: #d9d9d9;
+}
+
+.btnEdit:hover {
+    background-color: #cccccc;
+}
+
+.tableIndex tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.checkedStar {
+    color: transparent;
+}
+
+.divStars {
+    display: inline;
+    margin-left: 8px;
+}
+
+.tableIndex th:first-child, td:first-child {
+    width: 18%;
+}
+
+.btnRev {
+    border-color: #4CAF50;
+}

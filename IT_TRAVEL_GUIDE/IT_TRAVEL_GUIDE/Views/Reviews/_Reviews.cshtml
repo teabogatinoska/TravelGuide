@@ -1,0 +1,55 @@
+﻿@model IEnumerable<IT_TRAVEL_GUIDE.Models.CityReview>
+
+<head>
+    <link rel="stylesheet" href="~/Content/CityDetailsCss.css" type="text/css" />
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+
+    <script type="text/javascript" src="~/Content/CityDetailsJavascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="containerGlaven">
+
+        <table class="table tableIndex">
+
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Rating)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ReviewText)
+                </th>
+
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td> 
+                        Stars:
+                        <div class="divStars" data-default-value="@item.Rating">
+                            <span data-value="5" class="fa fa-star"></span>
+                            <span data-value="4" class="fa fa-star"></span>
+                            <span data-value="3" class="fa fa-star"></span>
+                            <span data-value="2" class="fa fa-star"></span>
+                            <span data-value="1" class="fa fa-star"></span>
+                        </div>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ReviewText)
+                    </td>
+
+                    <td>
+                        <input type="button" class="btn btnEdit" value="Edit" onclick="location.href='@Url.Action("Edit" , new { id = item.Id })'" />
+
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+        </div>
+</body>

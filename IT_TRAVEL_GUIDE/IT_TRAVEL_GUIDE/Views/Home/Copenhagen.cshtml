@@ -1,0 +1,133 @@
+﻿
+@{
+    ViewBag.Title = "Copenhagen";
+}
+
+<head>
+    <link rel="stylesheet" href="~/Content/CityCss.css" type="text/css" />
+    <script type="text/javascript" src="~/Content/CityJavascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <div class="header">
+        <h1>Copenhagen</h1>
+    </div>
+    <div class="clearfix">
+
+        <div class="column menu">
+            <ul class="ulMenu">
+                <li id="li1">Main attractions</li>
+                <li id="li2">Restaurants</li>
+                <li id="li3">Hotels</li>
+                <li id="li5">Nightlife</li>
+                <li id="li6">Tips</li>
+            </ul>
+        </div>
+
+        <div class="column content">
+
+            <div class="divMainAttractions">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/tivoli.jpg" class="active">
+                            <p>TIVOLI GARDENS</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/littlemermaid.jpg">
+                            <p>THE LITTLE MERMAID</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/nyhavn.jpg">
+                            <p>NYHAVN</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divRestaurants">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/noma.jpg" class="active">
+                            <p>NOMA</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/juno.jpg">
+                            <p>JUNO</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/amass.jpg">
+                            <p>AMASS</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divBeaches">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/western.jpg" class="active">
+                            <p>BEST WESTERN HOTEL CITY</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/nobis.jpg">
+                            <p>NOBIS HOTEL</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/admiral.jpg">
+                            <p>ADMIRAL HOTEL</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divNightlife">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/pompette.jpg" class="active">
+                            <p>PPOMPETTE</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/joy.jpg">
+                            <p>JOY BAR</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/culturebox.jpg">
+                            <p>CULTURE BOX</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divTips">
+                <ul class="tips">
+                    <li>Walking is certainly the best and most pleasurable way to see Copenhagen</li>
+                    <li>It is the most bike-friendly city with excellent bike infrastructure</li>
+                    <li>Best time to visit: summer</li>
+                    <li>Eat at the best street food markets</li>
+                    <li>Hop on a canal tour</li>
+                </ul>
+            </div>
+            <div class="divInfo">
+                <p>Come and be charmed by Copenhagen, Northern Europe’s cosiest capital, packed with cafés, shops, and the best restaurants in Scandinavia.Whether it's your first visit or one of many, here are some things to do when you're in Copenhagen</p>
+                <img src="~/Content/Images/copenhagenOutline.png" />
+            </div>
+
+
+        </div>
+    </div>
+    <div>
+        <input type="button" class="btn btnSeeReviews" value="See reviews" onclick="location.href='@Url.Action("Index/6", "Reviews")'" />
+    </div>
+
+
+</body>

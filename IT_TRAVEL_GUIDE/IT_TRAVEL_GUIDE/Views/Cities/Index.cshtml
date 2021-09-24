@@ -1,0 +1,88 @@
+﻿    @model IEnumerable<IT_TRAVEL_GUIDE.Models.City>
+
+@{
+    ViewBag.Title = "Index";
+}
+<head>
+    <link rel="stylesheet" href="~/Content/CityIndexCss.css" type="text/css" />
+
+</head>
+<body>
+
+    <div>
+        <div>
+            <img src="~/Content/Images/skyline.png" class="slikaOutline" />
+        </div>
+
+        <h2>List Of The Cities:</h2>
+
+
+        <div>
+        @if (User.IsInRole("Administrator") || User.IsInRole("Editor"))
+        {
+        <input type="button" class="btn btnAddCity" value="Add New City" onclick="location.href='@Url.Action("Create")'" />
+        }
+        </div>
+
+    </div>
+
+    <table class="table tabelaIndex" id="citiesTable">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.CityName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Country)
+                </th>
+                <th colspan="2">
+                    Number of Reviews
+                </th>
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CityName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Country)
+                </td>
+                <td>
+                    @item.Reviews.Count()
+                </td>
+
+
+                <td>
+                    @if (User.IsInRole("Administrator") || User.IsInRole("Editor"))
+                        {
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    
+
+                        }
+
+                    @Html.ActionLink("Reviews", "Index", "Reviews", new { id = item.Id }, null)
+                    @Html.ActionLink("Attractions", "Index", "Attractions", new { id = item.Id }, null)
+
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+
+</body>
+
+@section scripts{
+    <script>
+       
+        $(document).ready(function () {
+            var table = $("#citiesTable").DataTable();
+        });
+        
+    </script>
+}

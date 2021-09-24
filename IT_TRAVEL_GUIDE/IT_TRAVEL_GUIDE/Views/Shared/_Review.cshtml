@@ -1,0 +1,12 @@
+﻿@model IT_TRAVEL_GUIDE.Models.CityReview
+
+
+<div class="reviewClass">
+    <h4>@Model.CityName</h4>
+    <span>@Model.Rating</span>
+    <p>@Model.Country</p>
+
+    <span class="desno">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id })
+    </span>
+</div>

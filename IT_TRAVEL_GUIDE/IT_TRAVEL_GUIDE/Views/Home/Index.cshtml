@@ -1,0 +1,81 @@
+﻿@model IEnumerable<IT_TRAVEL_GUIDE.Models.CityListViewModel>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<head>
+    <link rel="stylesheet" href="~/Content/IndexPageCss.css" type="text/css" />
+
+</head>
+<body>
+
+    <div class="glavenDiv">
+        <div class="naslov">
+            <h1> THE TRAVEL GUIDE</h1>
+        </div>
+
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <div class="containerTd">
+                            <img src="~/Content/Images/barcelona.jpg" class="imageTd">
+                            <div class="overlayTd">
+                                <div class="textTd">BARCELONA</div>
+                                @Html.ActionLink("Barcelona", "Barcelona", "Home", new { @class = "overlayTd slikaLink" })
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="containerTd">
+                            <img src="~/Content/Images/copenhagen.jpg" class="imageTd">
+                            <div class="overlayTd">
+                                <div class="textTd">COPENHAGEN</div>
+                                @Html.ActionLink("Click Copenhagen", "Copenhagen", "Home", new { @class = "overlayTd slikaLink" })
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="containerTd">
+                            <img src="~/Content/Images/valencia.jpg" class="imageTd">
+                            <div class="overlayTd">
+                                <div class="textTd">VALENCIA</div>
+                                @Html.ActionLink("Click Valencia", "Valencia", "Home", new { @class = "overlayTd slikaLink" })
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="containerTd">
+                            <img src="~/Content/Images/skopje.jpg" class="imageTd">
+                            <div class="overlayTd">
+                                <div class="textTd">SKOPJE</div>
+                                @Html.ActionLink("Click Skopje", "Skopje", "Home", new { @class = "overlayTd slikaLink" })
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="containerTd">
+                            <img src="~/Content/Images/ohrid.jpg" class="imageTd">
+                            <div class="overlayTd">
+                                <div class="textTd">OHRID</div>
+                                @Html.ActionLink("Click Ohrid", "Ohrid", "Home", new { @class = "overlayTd slikaLink" })
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="containerTd">
+                            <img src="~/Content/Images/vienna.jpg" class="imageTd">
+                            <div class="overlayTd">
+                                <div class="textTd">VIENNA</div>
+                                @Html.ActionLink("Click Vienna", "Vienna", "Home", new { @class = "overlayTd slikaLink" })
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</body>

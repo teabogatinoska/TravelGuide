@@ -1,0 +1,40 @@
+﻿body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.naslovReviews {
+    padding-top: 30px;
+}
+
+.naslovReviews h3, p {
+    display: inline;
+}
+
+.tabelaReviews {
+    font-family: Cambria;
+    margin-top: 50px;
+}
+
+.tabelaReviews td:first-child {
+    width: 20%;
+    font-size: 27px;
+    background-color: #f2f2f2;
+}
+
+.spanAttr {
+    font-size: 20px;
+    display: block;
+    padding-top: 10px;
+    font-style: italic;
+}
+
+.tabelaReviews td:nth-child(2) {
+    width: 18%;
+    font-size: 15px;    
+}
+
+.slikaOutline2 {
+    height: 220px;
+    width: 900px;
+    margin-left: 110px;
+}

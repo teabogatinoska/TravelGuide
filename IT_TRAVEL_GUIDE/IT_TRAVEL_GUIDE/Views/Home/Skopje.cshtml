@@ -1,0 +1,133 @@
+﻿
+@{
+    ViewBag.Title = "Skopje";
+}
+
+<head>
+    <link rel="stylesheet" href="~/Content/CityCss.css" type="text/css" />
+    <script type="text/javascript" src="~/Content/CityJavascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <div class="header">
+        <h1>Skopje</h1>
+    </div>
+
+    <div class="clearfix">
+
+        <div class="column menu">
+            <ul class="ulMenu">
+                <li id="li1">Main attractions</li>
+                <li id="li2">Restaurants</li>
+                <li id="li3">Hotels</li>
+                <li id="li5">Nightlife</li>
+                <li id="li6">Tips</li>
+            </ul>
+        </div>
+
+        <div class="column content">
+
+            <div class="divMainAttractions">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/matka.jpg" class="active">
+                            <p>CANYON MATKA</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/oldbazaar.jpg">
+                            <p>OLD BAZAAR</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/stoneBridge.jpg">
+                            <p>STONE BRIDGE</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divRestaurants">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/district.jpg" class="active">
+                            <p>DISTRICT BAR & KITCHEN</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/pelister.jpg">
+                            <p>PELISTER</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/publicroom.jpg">
+                            <p>PUBLIC ROOM</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divBeaches">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/mariot.jpg" class="active">
+                            <p>SKOPJE MARRIOTT HOTEL</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/doubletree.jpg">
+                            <p>DOUBLE TREE BY HILTON</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/parkhotel.jpg">
+                            <p>PARK HOTEL & SPA</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divNightlife">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/epi.jpg" class="active">
+                            <p>EPICENTER CLUB</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/sektor.jpg">
+                            <p>SEKTOR 909</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/stanica.jpg">
+                            <p>STATION 26</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+
+            </div>
+            <div class="divTips">
+                <ul class="tips">
+                    <li>Take the Cable Car to the Millennium Cross</li>
+                    <li>Escape the city at Matka Canyon</li>
+                    <li>Feast on traditional foods</li>
+                    <li>Discover the spirit of Debar Maalo</li>
+                    <li>Look at the city from the fortess</li>
+                </ul>
+            </div>
+            <div class="divInfo">
+                <p>Skopje is the capital and largest city of North Macedonia. It is the country's political, cultural, economic, and academic centre.Visit the pedestrian zone in the centre for a coffee in the morning, the Old Bazaar for a walk and a traditional lunch, possibly the top of Mount Vodno for a gondola ride and a nice view,Lake Matka...</p>
+                <img src="~/Content/Images/skopjeOutline.png" />
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <input type="button" class="btn btnSeeReviews" value="See reviews" onclick="location.href='@Url.Action("Index/2", "Reviews")'" />
+    </div>
+
+</body>

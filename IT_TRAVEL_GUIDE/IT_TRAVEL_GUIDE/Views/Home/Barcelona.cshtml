@@ -1,0 +1,133 @@
+﻿
+@{
+    ViewBag.Title = "Barcelona";
+}
+<head>
+    <link rel="stylesheet" href="~/Content/CityCss.css" type="text/css" />
+    <script type="text/javascript" src="~/Content/CityJavascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <div class="header">
+        <h1>Barcelona</h1>
+    </div>
+
+    <div class="clearfix">
+
+        <div class="column menu">
+            <ul class="ulMenu">
+                <li id="li1">Main attractions</li>
+                <li id="li2">Restaurants</li>
+                <li id="li3">Beaches</li>
+                <li id="li5">Nightlife</li>
+                <li id="li6">Tips</li>
+            </ul>
+        </div>
+
+        <div class="column content">
+
+            <div class="divMainAttractions">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/sagradafamilia.jpg" class="active">
+                            <p>BASILICA DE LA SAGRADA FAMILIA</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/parkguell.jpg">
+                            <p>PARK GUELL - GAUDI'S SURREALIST PARK</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/mila.jpg">
+                            <p>CASA MILA</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divRestaurants">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/agut.jpg" class="active">
+                            <p>AGUT</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/lasarte.jpg">
+                            <p>LASARTE</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/conboneta.png">
+                            <p>CAN BONETA</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divBeaches">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/barceloneta.jpg" class="active">
+                            <p>BARCELONETA BEACH</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/novaicaria.jpg">
+                            <p>NOVA ICARIA</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/bogatell.jpg">
+                            <p>BOGATELL</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divNightlife">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/lasramblas.jpg" class="active">
+                            <p>RAZZMATAZZ</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/gothicquarter.jpg">
+                            <p>GOTHIC QUARTER</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/elborn.jpg">
+                            <p>MOOG</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divTips">
+                <ul class="tips">
+                    <li>Book your La Sagrada Familia ticket ahead of time</li>
+                    <li>Use the multi-day metro cards to save money</li>
+                    <li>Take advantage of the free museum on Sundays</li>
+                    <li>Attend one of the many Barcelona festivals</li>
+                    <li>For the best panoramas, hike to Bunkers del Carmel</li>
+                </ul>
+            </div>
+
+            <div class="divInfo">
+                <p>Barcelona has become one of the first tourist destination of Spain, it has everything to please the majority of visitors : with a history among the oldest in Europe, a capital, Barcelona, which never sleeps and an inland full of charm not to forget beautiful beaches in La Costa Brava. The variety of artistic treasures, the Romanesque churches and the great names in modern art and architecture , Dali, Gaudi, Miro, Picasso ...</p>
+                <img src="~/Content/Images/barcelonaOutline.png" />
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <input type="button" class="btn btnSeeReviews" value="See reviews" onclick="location.href='@Url.Action("Index/4", "Reviews")'" />
+    </div>
+
+</body>

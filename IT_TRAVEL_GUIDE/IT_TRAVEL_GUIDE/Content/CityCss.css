@@ -1,0 +1,168 @@
+﻿
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix p {
+    font-size: 30px;
+}
+
+.header h1 {
+    padding-top: 20px;
+    font-size: 75px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.clearfix {
+    margin-top: 25px;
+}
+
+.column {
+    float: left;
+    height: 350px;
+}
+
+.menu {
+    width: 400px;
+}
+
+.menu ul {
+    list-style-type: none;
+    font-size: 32px;
+    padding: 0px 10px 0px 0px;
+    width: 350px;
+}
+
+.menu li {
+    padding: 8px 0px 8px 20px;
+    margin-bottom: 8px;
+}
+
+.ulMenu li:nth-child(even) {
+    background-color: #f3ffe6;
+}
+
+.ulMenu li:nth-child(odd) {
+    background-color: #ceff99;
+}
+
+.li1 {
+    padding: 7px 10px 7px 20px;
+}
+
+.li2 {
+    padding: 7px 10px 7px 20px;
+}
+
+.menu li:hover {
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+
+.content {
+    width: 600px;
+    position: relative;
+}
+
+.content div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.imgTabela {
+    height: 120px;
+    width: 120px;
+}
+
+#tabelaMainAttractions td {
+    padding: 7px;
+}
+
+.divMainAttractions {
+    overflow: auto;
+}
+
+.divInfo p {
+    font-size: 25px !important;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.divInfo img {
+    height: 200px;
+    width: 800px;
+    padding-top: 30px;
+}
+
+.slider-inner {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    padding: 3px;
+}
+
+.slider-inner div {
+    display: none;
+    width: 660px;
+    height: 150px;
+    padding-left: 50px;
+}
+
+.slider-inner img {
+    display: block;
+    max-width: 500px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}
+
+.slider-inner div.activeDiv {
+    display: inline-block;
+}
+
+.prevArrow, .nextArrow {
+    float: left;
+    margin-top: 130px;
+    cursor: pointer;
+}
+
+.prevArrow {
+    position: relative;
+    margin-right: -45px;
+    margin-top: 190px;
+    z-index: 100;
+    height: 40px;
+    width: 40px;
+}
+
+.nextArrow {
+    position: relative;
+    margin-left: 560px;
+    margin-top: 190px;
+    z-index: 100;
+    height: 40px;
+    width: 40px;
+}
+
+.btnSeeReviews {
+    font-size: 20px;
+}
+.tips {
+    font-family: 'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-size: 28px;
+}

@@ -1,0 +1,31 @@
+﻿@model IT_TRAVEL_GUIDE.Models.City
+
+@{
+    ViewBag.Title = "Index";
+}
+<head>
+    <link rel="stylesheet" href="~/Content/ReviewsZaGradCss.css" type="text/css" />
+</head>
+<body>
+
+    <div class="naslovReviews">
+        <h2>Reviews for @Model.CityName</h2><br />
+        <h3>Average Rating Of The City:</h3>
+        <p class="classAverageRating">@Model.Reviews.Average(review => review.Rating)</p>
+    </div><br />
+
+    <p>
+        <input type="button" class="btn btnRev" value="Write Review" onclick="location.href='@Url.Action("Create", new { cityId = Model.Id })'" />
+    </p>
+
+    <br/><br/>
+    @Html.Partial("_Reviews", Model.Reviews)
+
+
+
+    @section scripts {
+        <script>
+            $('.classAverageRating').text(parseFloat(document.getElementsByClassName('classAverageRating')[0].textContent).toFixed(2));
+        </script>
+    }
+</body>

@@ -1,0 +1,130 @@
+﻿
+@{
+    ViewBag.Title = "Valencia";
+}
+
+<head>
+    <link rel="stylesheet" href="~/Content/CityCss.css" type="text/css" />
+    <script type="text/javascript" src="~/Content/CityJavascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <div class="header">
+        <h1>Valencia</h1>
+    </div>
+
+    <div class="clearfix">
+
+        <div class="column menu">
+            <ul class="ulMenu">
+                <li id="li1">Main attractions</li>
+                <li id="li2">Restaurants</li>
+                <li id="li3">Beaches</li>
+                <li id="li5">Nightlife</li>
+                <li id="li6">Tips</li>
+            </ul>
+        </div>
+
+        <div class="column content">
+
+            <div class="divMainAttractions">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/ciudad.jpg" class="active">
+                            <p>CIUDAD DE LAS ARTES Y LAS CIENCIAS</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/ocean.jpg">
+                            <p>OCEANOGRAFIC VALENCIA</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/lonja.jpg">
+                            <p>LA LONJA DE SEDA</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divRestaurants">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/bodega.jpg" class="active">
+                            <p>Bodega Casa Montana</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/papardella.jpg">
+                            <p>La Pappardella</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/fesol.jpg">
+                            <p>Palace Fesol</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divBeaches">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/malvarossa.jpg" class="active">
+                            <p>LA MALVAROSSA</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/saler.jpg">
+                            <p>EL SALER</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/port.jpg">
+                            <p>PORT SAPLAYA</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divNightlife">
+                <div class="slider-outer">
+                    <img src="~/Content/Images/arrLeft.png" class="prevArrow" alt="Prev">
+                    <div class="slider-inner">
+                        <div class="activeDiv">
+                            <img src="~/Content/Images/bario.jpg" class="active">
+                            <p>BARRIO EL CARMEN</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/canovas.jpg">
+                            <p>PLAZA CANOVAS</p>
+                        </div>
+                        <div>
+                            <img src="~/Content/Images/juan.jpg">
+                            <p>JUAN LLORENS</p>
+                        </div>
+                    </div>
+                    <img src="~/Content/Images/arrRight.png" class="nextArrow" alt="Next">
+                </div>
+            </div>
+            <div class="divTips">
+                <ul class="tips">
+                    <li>Rent Bikes and Explore Valencia’s Beautiful Beaches</li>
+                    <li>Eat Valencia’s Famous Paella on the Beach</li>
+                    <li>Discover Valencia’s Explosive Las Fallas Festival (Every March)</li>
+                    <li>March to October are the best months to plan your trip</li>
+                    <li>The old district of Ciutat Vella is probably the best area to stay in Valencia</li>
+                </ul>
+            </div>
+            <div class="divInfo">
+                <p>The port city of Valencia lies on Spain’s southeastern coast, where the Turia River meets the Mediterranean Sea. It’s known for its City of Arts and Sciences, with futuristic structures including a planetarium, an oceanarium and an interactive museum</p>
+                <img src="~/Content/Images/valenciaOutline.png" />
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="button" class="btn btnSeeReviews" value="See reviews" onclick="location.href='@Url.Action("Index/7", "Reviews")'" />
+    </div>
+</body>
